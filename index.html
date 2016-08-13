@@ -65,7 +65,7 @@
 //                champion: null
 //            };
             for(var i = 0; i < MOVIE_TITLES.length; i++) {
-                fetch('http://www.omdbapi.com/?plot=short&r=json&t=' + encodeURIComponent(MOVIE_TITLES[i]))
+                fetch('https://www.omdbapi.com/?plot=short&r=json&t=' + encodeURIComponent(MOVIE_TITLES[i]))
                         .then(function(response) {
                             return response.json();
                         })
